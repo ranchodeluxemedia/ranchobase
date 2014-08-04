@@ -38,7 +38,7 @@ nbproject/
 ## Misc
 ############
 node_modules/
-.sass-cache/
+.sass-cache
 bin/
 tmp/
 *.tmp
