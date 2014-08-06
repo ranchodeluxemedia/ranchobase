@@ -8,10 +8,5 @@
         }
     ],
     "require": {
-        "facebook/php-sdk-v4": "4.1.*@dev",
-        "mashape/unirest-php" : "dev-master"
-    },
-    "autoload": {
-        "psr-0": {"Unirest": "lib/"}
     }
 }

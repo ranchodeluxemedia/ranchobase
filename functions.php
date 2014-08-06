@@ -24,7 +24,6 @@ sidebars, comments, ect.
 	- adding custom fields to user profiles
 */
 require_once( 'assets/init.php' ); // if you remove this, rdmbase will break
-require_once( 'includes/admin-branding.php' );
 /*
 2. assets/custom-post-type.php
 	- an example custom post type
@@ -58,7 +57,7 @@ require_once( 'assets/admin.php' ); // this comes turned off by default
 */
 // require_once( 'assets/translation/translation.php' ); // this comes turned off by default
 
-include_once('includes/CPT.php');
+include_once('includes/CPT.php'); // Simple Custom Post Type Class I found on the interwebs...
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
