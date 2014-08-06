@@ -71,9 +71,9 @@ $black:             #000;
 $white:             #fff;
 
 $rdmbase-pink:        #f01d4f;
-$rdmbase-blue:        #1990db;
+$rdmbase-blue:        #27AAE1;
 
-$link-color:        $rdmbase-pink;
+$link-color:        $rdmbase-blue;
 $link-hover:        darken($link-color, 9%);
 
 /*
@@ -126,6 +126,11 @@ span.amp {
 .text-left   { text-align: left; }
 .text-center { text-align: center; }
 .text-right  { text-align: right; }
+
+// block positioning
+.right { float: right; }
+.left { float: left; }
+.center { margin: 0 auto; }
 
 
 // alerts and notices

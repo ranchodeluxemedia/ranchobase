@@ -64,8 +64,9 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
-				background: url('../images/arrow25.png') bottom center no-repeat;
+				//background-color: #dedede;
+				border-bottom: 3px solid #ddd;
+				//background: url('../images/arrow25.png') bottom center no-repeat;
 			}
 		}
 
@@ -271,6 +272,10 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
+.copyright {
+	font-size: 13px;
+}
+
 /*
 you'll probably need to do quite a bit
 of overriding here if you styled them for
@@ -280,7 +285,11 @@ ul.footer-nav {
 	display: block;
 		li {
 			display: inline-block;
+			margin-right: 25px;
 			a {
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 13px;
 				&:hover {}
 			}
 			/*

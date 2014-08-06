@@ -24,6 +24,7 @@ sidebars, comments, ect.
 	- adding custom fields to user profiles
 */
 require_once( 'assets/init.php' ); // if you remove this, rdmbase will break
+require_once( 'includes/admin-branding.php' );
 /*
 2. assets/custom-post-type.php
 	- an example custom post type
@@ -243,10 +244,23 @@ add_filter('show_admin_bar', '__return_false');
 
 //////////////////////// CUSTOM POST TYPES ///////////////////////////////
 
+// Races CPT
 $races = new CPT('race', array(
 	'supports' => array('title', 'thumbnail')
 ));
 $races->menu_icon("dashicons-location-alt");
 
+// Events CPT
+$events = new CPT( 'event', array(
+	'supports' => array( 'title', 'editor', 'author' )
+));
+$events->menu_icon('dashicons-calendar');
+
+//* Display Races CPT in Recent Posts Widget
+add_filter('widget_posts_args', 'afn_cpt_recent_posts_widget');
+function afn_cpt_recent_posts_widget($params) {
+   $params['post_type'] = array('race', 'post');
+   return $params;
+}
 
 ?>

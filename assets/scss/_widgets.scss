@@ -1,0 +1,31 @@
+/******************************************************************
+Page Name: Widget Styles
+Author: Chris Canterbury <chris@ranchodeluxemedia.com>
+******************************************************************/
+
+/*****************************
+  RECENT POSTS WIDGET STYLES
+*****************************/
+
+.widget_recent_entries {
+  ul {
+    li {
+    border-top: 1px dotted #777;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+    padding-top: 4px;
+    width: 100%;
+      &:first-child {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}

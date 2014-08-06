@@ -1,0 +1,6 @@
+{
+  "name": "ranchobase",
+  "dependencies": {
+    "octicons": "*"
+  }
+}

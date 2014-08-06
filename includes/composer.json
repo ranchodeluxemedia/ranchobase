@@ -1,0 +1,17 @@
+{
+    "name": "ranchobase/includes",
+    "description": "PHP Packages for RanchoBase",
+    "authors": [
+        {
+            "name": "Chris Canterbury",
+            "email": "chris@ranchodeluxemedia.com"
+        }
+    ],
+    "require": {
+        "facebook/php-sdk-v4": "4.1.*@dev",
+        "mashape/unirest-php" : "dev-master"
+    },
+    "autoload": {
+        "psr-0": {"Unirest": "lib/"}
+    }
+}

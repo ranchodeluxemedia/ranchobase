@@ -43,6 +43,26 @@
 
 		<div id="container">
 
+				<div class="topbar clearfix">
+					<div class="container clearfix">
+						<div class="row clearfix">
+							<div class="grid-2 text-left clearfix">
+								<span>Lorem ipsum dolor sit amet.</span>
+							</div>
+							<div class="grid-2 text-center clearfix">
+								<span>Lorem ipsum dolor sit amet.</span>
+							</div>
+							<div class="grid-2 text-right clearfix">
+								<span>
+									<a href="#"><span class="octicon octicon-location"></span></a>
+									<a href="#"><span class="octicon octicon-rocket"></span></a>
+									<a href="#"><span class="octicon octicon-device-mobile"></span></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			<header class="header" role="banner">
 
 				<div id="inner-header" class="wrap clearfix">

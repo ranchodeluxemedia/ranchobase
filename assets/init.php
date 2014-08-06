@@ -130,7 +130,7 @@ function rdmbase_scripts_and_styles() {
 
 		// register icons
 		wp_register_style( 'rdmbase-icons', '//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css', array(), '' );
-
+		wp_register_style( 'rdmbase-icons-b', get_stylesheet_directory_uri() . '/assets/bower_components/octicons/octicons/octicons.css', array(), '' );
 		// register main stylesheet
 		wp_register_style( 'rdmbase-stylesheet', get_stylesheet_directory_uri() . '/assets/css/style.min.css', array(), '', 'all' );
 
@@ -150,6 +150,7 @@ function rdmbase_scripts_and_styles() {
 		wp_enqueue_style( 'rdmbase-stylesheet' );
 		wp_enqueue_style( 'rdmbase-ie-only' );
 		wp_enqueue_style( 'rdmbase-icons' );
+		wp_enqueue_style( 'rdmbase-icons-b' );
 
 		$wp_styles->add_data( 'rdmbase-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 

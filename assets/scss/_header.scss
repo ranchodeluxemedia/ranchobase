@@ -1,0 +1,40 @@
+/******************************************************************
+Page Name: Header Styles
+Author: Chris Canterbury <chris@ranchodeluxemedia.com>
+******************************************************************/
+
+.topbar {
+  background: #111;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.topbar .grid-2 {
+  margin-bottom: 0;
+}
+
+.topbar .octicon {
+  margin-left: 30px;
+  font-size: 18px;
+  color: #bbb;
+  padding: 5px 0;
+}
+
+.header {
+  box-shadow: 0px 2px 2px 0px rgba(124, 124, 124, 0.30);
+}
+
+.top-nav li a {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111;
+  &:hover {
+    color: lighten(#111, 25%);
+  }
+}
+
+#logo {
+  margin-top: 10px;
+}

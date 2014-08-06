@@ -121,3 +121,14 @@ be set to display none.
 
 /* DEBUG STYLES */
 @import 'debug';
+
+/* Layout Styles */
+@import 'header';
+@import 'footer';
+
+/* Widget Styles */
+@import 'widgets';
+
+
+/* Front Page Styles */
+@import 'frontpage';
