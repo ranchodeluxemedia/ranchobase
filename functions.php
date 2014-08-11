@@ -24,6 +24,7 @@ sidebars, comments, ect.
 	- adding custom fields to user profiles
 */
 require_once( 'assets/init.php' ); // if you remove this, rdmbase will break
+require_once( 'assets/scripts.php' ); // enqueueing all (or most) of our js plugins here
 /*
 2. assets/custom-post-type.php
 	- an example custom post type

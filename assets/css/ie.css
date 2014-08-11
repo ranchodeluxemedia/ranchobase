@@ -36,15 +36,19 @@ remember less is more.
 /*********************
 CLEARFIXIN'
 *********************/
-.clearfix {
+.clearfix, .cf {
   zoom: 1;
 }
-.clearfix:before, .clearfix:after {
+.clearfix:before, .cf:before, .clearfix:after, .cf:after {
   content: "";
   display: table;
 }
-.clearfix:after {
+.clearfix:after, .cf:after {
   clear: both;
+}
+
+.round {
+  border-radius: 50%;
 }
 
 /*********************
@@ -175,51 +179,29 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-.button, .button:visited {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #1881ae;
-  border-top-color: #1c95c8;
-  border-left-color: #1c95c8;
-  padding: 4px 12px;
-  color: white;
-  display: inline-block;
+.button {
+  background: #27AAE1;
+  color: #fff;
   font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  margin-bottom: 20px;
-  line-height: 21px;
-  border-radius: 4px;
-  background-color: #1d9cd1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#27aae1), to(#1d9cd1));
-  background-image: -webkit-linear-gradient(top, #27aae1, #1d9cd1);
-  background-image: linear-gradient(to bottom, #27aae1, #1d9cd1);
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-transition: background .3s grow_in_animation;
+          transition: background .3s grow_in_animation;
+  margin: 5px 0;
 }
-.button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-  color: white;
-  border: 1px solid #1881ae;
-  border-top-color: #146a8e;
-  border-left-color: #146a8e;
-  background-color: #1a8bbb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d9cd1), to(#1a8bbb));
-  background-image: -webkit-linear-gradient(top, #1d9cd1, #1a8bbb);
-  background-image: linear-gradient(to bottom, #1d9cd1, #1a8bbb);
-}
-.button:active, .button:visited:active {
-  background-color: #27aae1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d9cd1), to(#27aae1));
-  background-image: -webkit-linear-gradient(top, #1d9cd1, #27aae1);
-  background-image: linear-gradient(to bottom, #1d9cd1, #27aae1);
+.button:hover {
+  background: #177ba5;
+  color: #fff;
 }
 
 .blue-button, .blue-button:visited {
   border-color: #1a8bbb;
   text-shadow: 0 1px 1px #1a8bbb;
   background-color: #1d9cd1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#27aae1), to(#1d9cd1));
-  background-image: -webkit-linear-gradient(top, #27aae1, #1d9cd1);
-  background-image: linear-gradient(to bottom, #27aae1, #1d9cd1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#27AAE1), to(#1d9cd1));
+  background-image: -webkit-linear-gradient(top, #27AAE1, #1d9cd1);
+  background-image: linear-gradient(to bottom, #27AAE1, #1d9cd1);
   -webkit-box-shadow: inset 0 0 3px #6fc6eb;
           box-shadow: inset 0 0 3px #6fc6eb;
 }
@@ -231,10 +213,10 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1e9fd6, #1a8bbb);
 }
 .blue-button:active, .blue-button:visited:active {
-  background-color: #27aae1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d9cd1), to(#27aae1));
-  background-image: -webkit-linear-gradient(top, #1d9cd1, #27aae1);
-  background-image: linear-gradient(to bottom, #1d9cd1, #27aae1);
+  background-color: #27AAE1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d9cd1), to(#27AAE1));
+  background-image: -webkit-linear-gradient(top, #1d9cd1, #27AAE1);
+  background-image: linear-gradient(to bottom, #1d9cd1, #27AAE1);
 }
 
 /*------------------------------------------------------------
@@ -469,8 +451,14 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+.topbar {
+  background: #222 !important;
+}
+
 .header {
   padding-top: 20px;
+  background: #eee;
+  color: #ccc;
 }
 
 #logo a {
@@ -484,12 +472,10 @@ NAVIGATION STYLES
 .nav {
   text-align: right;
   border: 0;
+  margin-top: 25px;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
-}
-.nav ul {
-  margin-top: 0;
 }
 .nav li {
   display: inline-block;

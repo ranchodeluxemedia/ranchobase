@@ -15,6 +15,8 @@ remember less is more.
 
 ******************************************************************/
 
+
+
 /*********************
 CLEARFIXIN'
 *********************/
@@ -26,10 +28,18 @@ CLEARFIXIN'
 	&:after { clear: both; }
 }
 
+.cf {
+  @extend .clearfix;
+}
+
 @mixin cf {
   zoom: 1;
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
+}
+
+.round {
+  border-radius: 50%;
 }
 
 /*********************
@@ -56,6 +66,8 @@ TOOLS
 	overflow: hidden;
 }
 
+
+
 /*********************
 COLORS
 Need help w/ choosing your colors? Try this site out:
@@ -69,6 +81,8 @@ $alert-blue:        #d5edf8;
 
 $black:             #000;
 $white:             #fff;
+$dark-gray:        #2C3439;
+$light-gray:        #F4F4F4;
 
 $rdmbase-pink:        #f01d4f;
 $rdmbase-blue:        #27AAE1;
@@ -220,37 +234,53 @@ probably best not to use it. I mean, were you going to anyway? */
 BUTTONS
 *********************/
 
-.button, .button:visited {
-	font-family: $sans-serif;
-	border: 1px solid darken($link-color, 13%);
-	border-top-color: darken($link-color, 7%);
-	border-left-color: darken($link-color, 7%);
-	padding: 4px 12px;
-	color: $white;
-	display: inline-block;
-	font-size: 11px;
-	font-weight: bold;
-	text-decoration: none;
-	text-shadow: 0 1px rgba(0,0,0, .75);
-	cursor: pointer;
-	margin-bottom: 20px;
-	line-height: 21px;
-	border-radius: 4px;
-	@include css-gradient($link-color, darken($link-color, 5%));
+// .button, .button:visited {
+// 	font-family: $sans-serif;
+// 	border: 1px solid darken($link-color, 13%);
+// 	border-top-color: darken($link-color, 7%);
+// 	border-left-color: darken($link-color, 7%);
+// 	padding: 4px 12px;
+// 	color: $white;
+// 	display: inline-block;
+// 	font-size: 11px;
+// 	font-weight: bold;
+// 	text-decoration: none;
+// 	text-shadow: 0 1px rgba(0,0,0, .75);
+// 	cursor: pointer;
+// 	margin-bottom: 20px;
+// 	line-height: 21px;
+// 	border-radius: 4px;
+// 	@include css-gradient($link-color, darken($link-color, 5%));
 
 
-	&:hover, &:focus {
-		color: $white;
-	  	border: 1px solid darken($link-color, 13%);
-	  	border-top-color: darken($link-color, 20%);
-	 	border-left-color: darken($link-color, 20%);
-		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
-	}
+// 	&:hover, &:focus {
+// 		color: $white;
+// 	  	border: 1px solid darken($link-color, 13%);
+// 	  	border-top-color: darken($link-color, 20%);
+// 	 	border-left-color: darken($link-color, 20%);
+// 		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
+// 	}
 
-	&:active {
-		@include css-gradient(darken($link-color, 5%), $link-color);
-	}
+// 	&:active {
+// 		@include css-gradient(darken($link-color, 5%), $link-color);
+// 	}
+// }
+
+.button {
+  background:$link-color;
+  color:#fff;
+  font-size: 11px;
+  padding: 10px 20px;
+  display:inline-block;
+  text-transform:uppercase;
+  transition: background .3s grow_in_animation;
+  margin: 5px 0;
+  &:hover {
+  	background: darken($link-color, 15%);
+  	color: #fff;
+  }
 }
+
 
 .blue-button, .blue-button:visited {
 	border-color: darken($rdmbase-blue, 10%);

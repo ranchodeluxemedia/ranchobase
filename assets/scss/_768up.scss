@@ -31,8 +31,14 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
+.topbar {
+	background: #222 !important;
+}
+
 .header {
 	padding-top: 20px;
+	background: #eee;
+	color: #ccc;
 }
 
 	#logo a {
@@ -45,12 +51,13 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	//background: #eee;
+	//background: #000;
 	//margin-left: 400px;
 	text-align: right;
 	border: 0;
+	margin-top: 25px;
 	ul {
-		margin-top:0;
+		//margin-top:10;
 	}
 	li {
 		display: inline-block;

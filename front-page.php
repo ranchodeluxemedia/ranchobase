@@ -2,20 +2,37 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
-
-					<div class="row">
-						<div class="hero-unit grid-6 cf">
-							<div class="grid-3 clearfix">
-							<img src="http://placehold.it/900x450" alt="">
+				<div id="inner-content" class=" main-section clearfix">
+					<div class="call-to-action cf">
+						<div class="container">
+							<div class="row">
+							<div class="hero-unit grid-6 cf">
+								<div class="grid-3 clearfix">
+								<img src="http://placehold.it/900x450" alt="">
+								</div>
+								<div class="grid-3 clearfix">
+									<h2>This is a callout</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt optio quasi aperiam vitae suscipit atque provident delectus voluptatum itaque nemo sequi quas reiciendis eveniet quisquam recusandae totam, placeat pariatur exercitationem quis eum quos mollitia blanditiis laboriosam voluptas. Facilis numquam eaque, placeat natus modi ab cupiditate!</p>
+									<a href="#" class="right button">Call to Action</a>
+								</div>
+								</div>
 							</div>
-							<div class="grid-3 clearfix">
-								<h2>This is a callout</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt optio quasi aperiam vitae suscipit atque provident delectus voluptatum itaque nemo sequi quas reiciendis eveniet quisquam recusandae totam, placeat pariatur exercitationem quis eum quos mollitia blanditiis laboriosam voluptas. Facilis numquam eaque, placeat natus modi ab cupiditate!</p>
-								<button class="right button">Call to Action</button>
-							</div>
-							</div>
+						</div>
 					</div>
+					<!-- <div class="row">
+						<div class="subcontent-box grid-2 clearfix">
+							<img src="http://placehold.it/400" class="thumbnail-round" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto natus, doloremque facere harum qui optio voluptates eaque dolorem nesciunt nisi in maiores, consectetur repudiandae pariatur.</p>
+						</div>
+						<div class="subcontent-box grid-2 clearfix">
+							<img src="http://placehold.it/400" class="thumbnail-round" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto natus, doloremque facere harum qui optio voluptates eaque dolorem nesciunt nisi in maiores, consectetur repudiandae pariatur.</p>
+						</div>
+						<div class="subcontent-box grid-2 clearfix">
+							<img src="http://placehold.it/400" class="thumbnail-round" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto natus, doloremque facere harum qui optio voluptates eaque dolorem nesciunt nisi in maiores, consectetur repudiandae pariatur.</p>
+						</div>
+					</div> -->
 
 						<div id="main" class="grid-4 clearfix" role="main">
 
@@ -79,7 +96,6 @@
 						<?php get_sidebar(); ?>
 
 				</div>
-
 			</div>
 
 <?php get_footer(); ?>
